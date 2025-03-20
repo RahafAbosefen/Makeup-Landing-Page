@@ -1,0 +1,130 @@
+/* General Styles for the Website */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fef4ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #a76d68;
+}
+
+strong {
+    color: #ff4d5c;
+    font-style: italic;
+}
+
+/* TODO:page layout*/
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+}
+
+.page-title {
+    font-size: 2rem;
+    color: #a76d68;
+    text-align: center;
+}
+
+.navbar {
+    grid-area: hd;
+    padding: 0;
+    justify-content: center;
+}
+
+.menu {
+    width: 34%;
+    display: inline-flex;
+    float: right;
+}
+
+.logo {
+    width: 7.5rem;
+    height: auto;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 1.25rem;
+}
+
+a {
+    padding: 0.875rem 1rem;
+    align-items: end;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #a76d68;
+}
+
+a:hover,
+a#active {
+    color: #ff4d5c;
+    background-color: #fddbfa;
+}
+
+/* TODO:main*/
+.main-section {
+    grid-area: main;
+}
+
+/*  TODO:Button */
+button {
+    width: 11rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #fddbfa;
+    color: #a76d68;
+    border: none;
+    border-radius: 1.25rem;
+}
+
+button:hover {
+    background-color: #a76d68;
+    color: #fddbfa;
+}
+
+/* TODO:Input and Textarea*/
+input,
+textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0.125rem solid #ff4d5c;
+}
+
+/* TODO:Footer*/
+.footer {
+    grid-area: ft;
+    width: 100%;
+    background-color: #fef4ff;
+    color: #b59c5b;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.img-logo {
+    width: 6.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
