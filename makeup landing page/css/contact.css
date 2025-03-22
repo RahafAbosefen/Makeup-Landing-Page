@@ -1,0 +1,119 @@
+/* Styles specific to the Contact Us Page */
+.main-section {
+    text-align: center;
+    margin: 1.875rem 5.625rem;
+    padding: 1.25rem;
+    background-color: #fefcff;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    font-size: 1rem;
+    color: #b59c5b;
+    margin-bottom: 1.875rem;
+}
+
+/*  TODO:Contact Form */
+.contact-form {
+    margin: 0 auto 1.875rem;
+    max-width: 37.5rem;
+    text-align: left;
+}
+
+.title-form {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125rem;
+    color: #a76d68;
+}
+
+#btn-form {
+    width: 100%;
+    padding: 0.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*  TODO:Contact Information */
+.contact-info {
+    margin-top: 2.5rem;
+    text-align: left;
+}
+
+.info {
+    font-size: 1rem;
+    color: #b59c5b;
+    margin-bottom: 0.625rem;
+}
+
+.address {
+    font-size: 1rem;
+    color: #b59c5b;
+    margin-bottom: 0.625rem;
+}
+
+/*ToDO:Media Queries
+/* Small screens (320px or less) */
+@media (max-width: 320px) {
+    .main-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        margin: 0 0.5rem;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .info,
+    .address {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium screens (600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .main-section {
+        margin: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .contact-form {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .info,
+    .address {
+        font-size: 1rem;
+    }
+}
+
+/* Large screens (901px or more) */
+@media (min-width: 901px) {
+    .main-section {
+        margin: 2rem 5rem;
+        padding: 2rem;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .info,
+    .address {
+        font-size: 1.2rem;
+    }
+}
